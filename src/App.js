@@ -10,8 +10,11 @@ import FoodSlideShow from './components/FoodSlideShow';
 function App() {
   return (
     <div className="container">
-    <h1 className="logo">Discover Armenia</h1>
-    <h4 className="subTitle">(To Be Continued....)</h4>
+      <div>
+       <h1 className="logo">Discover Armenia</h1>
+       <h4 className="subTitle">(To Be Continued....)</h4>
+      </div>
+  
     {/* <SlideImages slideImg={images}/> */}
     <h2 className="subTitle">Armenian National Cuisine</h2>
     <FoodSlideShow slideImg={foodImages}/>

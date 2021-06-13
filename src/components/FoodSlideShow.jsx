@@ -29,10 +29,11 @@ const FoodSlideShow = ({slideImg}) => {
            { currentImg === index && (
               <div >
                
-             <img src={image.image} alt={image.title} className={ showPopUpTable ? 'image opacity' : "image"} />
-              <h2 className="img-title">{image.title}</h2>
-             <button className="btn" onClick={openTable}>Recipes</button>
-                {showPopUpTable && <PopUpTable title={image} />}
+                <img src={image.image} alt={image.title} className={showPopUpTable ? 'image opacity' : "image"} />
+               
+                    <h2 className="img-title">{image.title}</h2>
+                   <button className="btn" onClick={openTable}>Recipes</button>
+                   {showPopUpTable && <PopUpTable title={image} />}
                 
               </div>
             )}   
@@ -40,12 +41,10 @@ const FoodSlideShow = ({slideImg}) => {
           
         </div>
       )
-      )}
-       
-    </section>
-   
-    <ul className="input-container">
-    {slideImg.map((image,index)=>(
+        )}
+
+         <ul className="input-container">
+      {slideImg.map((image,index)=>(
       <li key={image.id}>
           <input type="radio" name="slide" value={index} onClick={() =>{
             setCurrentImg(index)
@@ -55,6 +54,9 @@ const FoodSlideShow = ({slideImg}) => {
    )
    )}
     </ul>
+    </section>
+   
+  
   
     </Fragment>
    
