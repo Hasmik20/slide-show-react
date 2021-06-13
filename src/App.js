@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Footer from './components/Footer';
+import { images } from './components/Images';
+import SlideImages from './components/SlideImages';
+import {foodImages} from './components/Food'
+import FoodSlideShow from './components/FoodSlideShow';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+    <h1 className="logo">Discover Armenia</h1>
+    <h4 className="subTitle">(To Be Continued....)</h4>
+    {/* <SlideImages slideImg={images}/> */}
+    <h2 className="subTitle">Armenian National Cuisine</h2>
+    <FoodSlideShow slideImg={foodImages}/>
+    <Footer />
     </div>
   );
 }
