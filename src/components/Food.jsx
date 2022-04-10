@@ -7,7 +7,6 @@ export const foodImages =[
      " 1 large onion",
      " 2 tomatoes",
      " 2 Cloves of garlic",
-    "  1 cup of pomegranate juice",
     "  Salt and pepper"]
   },
   {
@@ -17,7 +16,6 @@ export const foodImages =[
     ingredient:["900g cabbage leaves",
     " 2 cans beans ",
     " 2 tomatoes",
-    " 2 gloves of garlic",
    "  1 can lentil",
    "  Salt and pepper"]
   },
@@ -63,7 +61,7 @@ export const foodImages =[
       " 1 cup sugar",
     " 200 g unsalted butter",
     " 5-6 cups plain flour",
-   "0.5 tsp baking soda "]
+]
   },
   
 ]
